@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+  background-color: #161b22;
+  color: white;
+  align-items: center;
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  width: 70%;
+
+}
+.left-nav svg {
+  margin-right: 10px;
+}
+.form {
+  position: relative;
+  width: 50%;
+  margin-left: 10px;
+}
+.form span {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: 1px solid rgb(63, 62, 62);
+  color: rgb(153, 147, 147);
+  padding: 2px;
+  border-radius: 10px;
+}
+.form input {
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  
+}
+.octicon-mark-github {
+  fill: white;
+}
+.octicon-bell {
+  fill: white;
+}
+.main {
+  width: 65%;
+  border: 1px solid #c9d1d9;
+  margin: 10em auto;
+  padding: 10px 30px 50px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+#username,
+button {
+  width: 100%;
+  border: none;
+  outline: none;
+  margin: 5px;
+}
+#username {
+  background-color: black;
+  padding: 10px;
+  border: 1px solid #21262d;
+  border-radius: 5px;
+}
+button {
+  background-color: rgb(14, 185, 14);
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-style: normal;
+}
+p {
+  margin-top: 2em;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 17px;
+}
+button:hover {
+  background-color: white;
+  color: rgb(14, 185, 14);
+}
+/* .toggleBtn{
+  display: none;
+} */
+.toggleBtn span{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px){
+  .main {
+      margin-top: 5em;
+  }
+  .left-nav .form {
+      display: none;
+
+  }
+   .form {
+    width: 100%;
+  }
+ .toggleBtn span {
+     display: block;
+     width: 30px;
+     height: 4px;
+     background-color: white;
+     margin-top: 3px;
+     transition: 0.5s;
+ }
+
+ nav .left-nav {
+     justify-content: center;
+ }
+ .left-nav .active {
+     display: block;
+ }
+ .main {
+   width: 80%;
+ }
+}
+
+
+@media only screen and (max-width: 600px){
+ .main {
+   border: none;
+   width: 100%;
+ }
+}
