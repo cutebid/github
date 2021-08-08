@@ -92,12 +92,12 @@ button:hover {
   background-color: white;
   color: rgb(14, 185, 14);
 }
-/* .toggleBtn{
+  .toggleBtn{
   display: none;
-} */
-.toggleBtn span{
+}  
+  .toggleBtn span{
     display: none;
-}
+}  
 
 
 @media only screen and (max-width: 768px){
@@ -111,8 +111,10 @@ button:hover {
    .form {
     width: 100%;
   }
+  .toggleBtn span {
+    display: block;
+  }
  .toggleBtn span {
-     display: block;
      width: 30px;
      height: 4px;
      background-color: white;
